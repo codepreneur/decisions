@@ -1,0 +1,88 @@
+<div class="extra-large-margin-top vertical-centered">
+  <div class="row">
+    <div class="small-24 medium-24 large-12 large-centered column text-center">
+      <div class="box">
+
+        <div class="answers">
+          <div class="large-gutter row">
+            <div class="small-24 column quiz-header">
+              <p class="quiz-heading">TACTICS - QUESTION 2</p>  
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="small-24 column">
+              <p class="black">You are the Director of a top rugby club. One of your hottest youth players is being courted by numerous clubs, but you’re not sure he’s quite ready for senior contract. Sign him up too early and he might not handle the pressure, wait too long and the more likely it is that he’ll go elsewhere.
+              </p>
+              <p class="black">Each individual below will provide you with information about the player to help inform your decision, but each consultation takes time. At any stage you can decide to offer the player a contract, reject the player, or reveal more information by clicking on one of the advisors. Seek as much advice as you need to help make your decision.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-24 column">
+              <div class='circle-container'>
+                
+                <div class="middle-bubble">
+                  {{#if clickedPersonInfo}}
+                  <p>{{clickedPersonInfo}}</p>
+                  {{else}}
+                  <p>Click on the icons around me...</p>
+                  {{/if}}
+                  People consulted: {{clickedPeopleCount}}
+                </div>
+                <a {{action 'clickPerson' 'youth-team-coach' bubbles=false}} class='deg0'><img class="round smaller-circle" src='img/Team_Coach.jpg'>Coach</a>
+                <a {{action 'clickPerson' 'player-himself'}} class='deg45'><img class="round smaller-circle" src='img/Team_Player.jpg'>Player</a>
+                <a {{action 'clickPerson' 'youth-team-captain'}} class='deg135'><img class="round smaller-circle" src='img/Captain.jpg'>Captain</a>
+                <a {{action 'clickPerson' 'club-doctor'}} class='deg180'><img class="round smaller-circle" src='img/Doctor.jpg'>Doctor</a>
+                <a {{action 'clickPerson' 'club-fitness-coach'}} class='deg225'><img class="round smaller-circle" src='img/Fitness_coach.jpg'>Fitness Coach</a>
+                {{!-- <a {{action 'clickPerson' 'senior-player'}} class='deg315'><img src='img/home-perscriptions-icon-off.png'></a> --}}
+              </div> 
+            </div>
+          </div>
+          
+
+          {{!-- <div class="gutter answers row">
+            <div class="small-24 column">
+
+              {{radio-button id="youth-team-coach" value="youth-team-coach" checked=advice}}<label {{action 'clickPerson' 'youth-team-coach'}} class="small button radius" for="youth-team-coach">Team coach</label>
+
+              {{radio-button id="player-himself" value="player-himself" checked=advice}}<label {{action 'clickPerson' 'player-himself'}} class="small button radius" for="player-himself">Player</label>
+
+              {{radio-button id="youth-team-captain" value="youth-team-captain" checked=advice}}<label {{action 'clickPerson' 'youth-team-captain'}} class="small button radius" for="youth-team-captain">Team captain</label>
+
+              
+
+            </div>
+          </div>
+
+          <div class="extra-large-gutter answers row">
+            <div class="small-24 column">
+
+		          {{radio-button id="club-doctor" value="club-doctor" checked=advice}}<label {{action 'clickPerson' 'club-doctor'}} class="small button radius" for="club-doctor">Club doctor</label>
+
+              {{radio-button id="club-fitness-coach" value="club-fitness-coach" checked=advice}}<label {{action 'clickPerson' 'club-fitness-coach'}} class="small button radius" for="club-fitness-coach">Fitness coach</label>
+
+             </div>
+          </div>
+
+          <p class="blue">{{clickedPersonInfo}}</p> --}}
+
+          <div class="row">
+            <div class="small-12 column">
+              <span {{action "updateQ33" "offer"}}>{{#link-to 'quiz.q4' class="expand button radius blue-background"}}Offer a contract{{/link-to}}</span>
+            </div>
+            <div class="small-12 column">
+              <span {{action "updateQ33" "reject"}}>{{#link-to 'quiz.q4' class="expand button radius blue-background"}}Reject{{/link-to}}</span>
+            </div>
+          </div>
+
+          
+        </div> {{!-- end of answers --}}
+      </div> {{!-- end of gutter row --}}
+    </div>{{!-- end of (dark) box --}}
+
+
+  </div>
+</div>
+</div>

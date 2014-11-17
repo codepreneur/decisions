@@ -1,0 +1,58 @@
+<div class="extra-large-margin-top vertical-centered">
+  <div class="row">
+    <div class="small-24 medium-24 large-12 large-centered column text-center timer-question">
+      {{time-countdown elId="countdown-q2-2-l" class="show-for-large-up" action="nextQuestion"}}
+      <div class="box">
+        <div class="large-gutter row">
+          <div class="small-24 column quiz-header">
+            <p class="quiz-heading">PRESSURE - QUESTION 2</p>
+          </div>
+        </div>
+        {{time-countdown elId="countdown-q2-2" action="nextQuestion"}}
+        <div class="gutter row">
+          <div class="small-24 column black">
+            What do you think was the average number of points scored per game in the last Rugby World Cup?
+          </div>
+        </div>
+        <div class="answers">
+          <div class="gutter row">
+            <div class="small-24 column">
+              <span>
+                {{radio-button name="score" id="41" value="41" checked=score}}<label class="button radius yellow-background" for="41">41</label>
+
+                {{radio-button name="score" id="42" value="42" checked=score}}<label class="button radius yellow-background" for="42">42</label>
+
+                {{radio-button name="score" id="43" value="43" checked=score}}<label class="button radius yellow-background" for="43">43</label>
+
+                {{radio-button name="score" id="44" value="44" checked=score}}<label class="button radius yellow-background" for="44">44</label>
+
+                {{radio-button name="score" id="45" value="45" checked=score}}<label class="button radius yellow-background" for="45">45</label>
+
+                {{radio-button name="score" id="46" value="46" checked=score}}<label class="button radius yellow-background" for="46">46</label>
+
+                {{radio-button name="score" id="47" value="47" checked=score}}<label class="button radius yellow-background" for="47">47</label>
+              </span>
+            </div>
+          </div>
+          {{#if scoreSelected}}
+          {{!-- Appears after first selection --}}
+          <p class="black">In 2003, the average points scored was 59. On reflection, would you like the opportunity to change your answer? If yes, please re-select an answer. If no, please press continue</p>
+
+          <div class="row">
+            <div class="small-24 columns">
+              <span {{action "updateQ22"}}>{{#link-to 'quiz.q3' class="button radius yellow-background"}}Continue{{/link-to}}</span>
+            </div>
+          </div>
+          {{/if}}
+          
+
+        
+        </div> {{!-- end of .answers --}}
+
+      </div>{{!-- end of (dark) box --}}
+      {{time-countdown elId="countdown-q2-2-r" class="show-for-large-up" action="nextQuestion"}}
+
+
+    </div>
+  </div>
+</div>

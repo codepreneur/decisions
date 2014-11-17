@@ -1,0 +1,249 @@
+.start {
+  background: url('../img/start-bg.png');
+}
+
+.index {
+
+}
+
+.background-jazzy, 
+.background-jazzy-2,
+.background-normal
+ {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  // background: white;
+}
+
+.background-normal {
+  -webkit-background-size: cover !important;
+       -o-background-size: cover !important;
+          background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+//  =====================
+//  = Speed Background (Arrows) =
+//  =====================
+
+@-webkit-keyframes animatedBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 163px 0px;
+  }
+}
+
+@keyframes animatedBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 163px 0px;
+  }
+}
+
+.bg-arrow {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-arrow.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 163px 97px !important;
+       -o-background-size: 163px 97px !important;
+          background-size: 163px 97px !important;
+  -webkit-animation: animatedBg 3s linear infinite;
+     -moz-animation: animatedBg 3s linear infinite;
+       -o-animation: animatedBg 3s linear infinite;
+          animation: animatedBg 3s linear infinite;
+  opacity: 0.5;
+}
+
+.bg-arrow-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-arrow.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 82px 42px !important;
+       -o-background-size: 82px 42px !important;
+          background-size: 82px 42px !important;
+  -webkit-animation: animatedBg 6s linear infinite;
+     -moz-animation: animatedBg 6s linear infinite;
+       -o-animation: animatedBg 6s linear infinite;
+          animation: animatedBg 6s linear infinite;
+  opacity: 0.5;
+}
+
+ // ======================
+ // = Warning Background =
+ // ======================
+
+@-webkit-keyframes animatedWarning {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 150px 0px;
+  }
+}
+
+@keyframes animatedWarning {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 150px 0px;
+  }
+}
+
+.bg-warning {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-warning.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 150px 150px !important;
+       -o-background-size: 150px 150px !important;
+          background-size: 150px 150px !important;
+  -webkit-animation: animatedWarning 3s linear infinite;
+     -moz-animation: animatedWarning 3s linear infinite;
+       -o-animation: animatedWarning 3s linear infinite;
+          animation: animatedWarning 3s linear infinite;
+}
+
+.bg-warning-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-warning.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 100px 100px !important;
+       -o-background-size: 100px 100px !important;
+          background-size: 100px 100px !important;
+  -webkit-animation: animatedWarning 6s linear infinite;
+     -moz-animation: animatedWarning 6s linear infinite;
+       -o-animation: animatedWarning 6s linear infinite;
+          animation: animatedWarning 6s linear infinite;
+}
+
+//  ======================
+//  = Tactics Background =
+//  ======================
+
+
+@-webkit-keyframes animatedTactics {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animatedTactics {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.bg-tactics {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-player.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 113px 113px !important;
+       -o-background-size: 113px 113px !important;
+          background-size: 113px 113px !important;
+  -webkit-animation: animatedTactics 18s linear infinite;
+     -moz-animation: animatedTactics 18s linear infinite;
+       -o-animation: animatedTactics 18s linear infinite;
+          animation: animatedTactics 18s linear infinite;
+}
+
+.bg-tactics-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-arrow.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 417px 134px !important;
+       -o-background-size: 417px 134px !important;
+          background-size: 417px 134px !important;
+  -webkit-animation: animatedTactics 9s linear infinite;
+     -moz-animation: animatedTactics 9s linear infinite;
+       -o-animation: animatedTactics 9s linear infinite;
+          animation: animatedTactics 9s linear infinite;
+}
+
+//  =====================
+//  = Visual Background =
+//  =====================
+
+@-webkit-keyframes animatedVisual {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animatedVisual {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.bg-visual {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-visual.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 113px 113px !important;
+       -o-background-size: 113px 113px !important;
+          background-size: 113px 113px !important;
+  -webkit-animation: animatedVisual 18s linear infinite;
+     -moz-animation: animatedVisual 18s linear infinite;
+       -o-animation: animatedVisual 18s linear infinite;
+          animation: animatedVisual 18s linear infinite;
+}
+
+.bg-visual-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-arrow.png');
+  background-position: 0px 0px;
+  background-repeat: repeat;
+  -webkit-background-size: 417px 134px !important;
+       -o-background-size: 417px 134px !important;
+          background-size: 417px 134px !important;
+  -webkit-animation: animatedVisual 9s linear infinite;
+     -moz-animation: animatedVisual 9s linear infinite;
+       -o-animation: animatedVisual 9s linear infinite;
+          animation: animatedVisual 9s linear infinite;
+}
+
+
+
+
+body>.ember-view>.liquid-container {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+
+}

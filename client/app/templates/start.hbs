@@ -1,0 +1,72 @@
+{{!-- <div class="row">
+  <div class="small-24 medium-24 large-16 large-centered column text-center">
+    <h1 class="no-background quiz-heading animated bounceIn">THE DECISION BREAKDOWN</h1>
+  </div>
+</div> --}}
+
+<div class="row">
+  <div class="small-24 medium-24 large-16 large-centered column text-center">
+    <div class="box">
+      <div class="row"></div>
+
+      <h4 class="black">Welcome to QBE’s Decision Breakdown</h4>
+      <p class="black">
+        A test to help you discover what kind of decision maker you are.
+      </p>
+      <p class="black">
+        To get you set-up, please answer the following questions:
+      </p>
+      <div class="row"></div>
+      {{#form-for controller}}
+      <div class="row">
+        <div class="small-12 column">
+          {{#input name}}
+            {{input-field name class="position-relative border-below" placeholder="Enter your name..."}}
+          {{/input}}
+        </div>
+        <div class="small-12 column">
+          {{#input email}}
+            {{input-field email class="position-relative border-below" placeholder="Enter your email address..."}}
+          {{/input}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-24 column">
+          <p class="black">
+            Before you start, we need an email address to send you your results. This will NOT be used by any third parties.
+          </p>
+        </div>
+      </div>
+
+      <div class="large-gutter row">
+        <div class="small-24 column">
+          <h6 class="black">What is your current level of responsibilities?</h6>
+          <div class="row"></div>
+          <div class="row answers">
+            <div class="small-12 column">
+
+              {{radio-button id="unemployed" name="seniority" value="unemployed" checked=seniority}}<label class="button radius expand" for="unemployed">Unemployed</label>
+
+              {{radio-button id="student" name="seniority" value="student" checked=seniority}}<label class="button radius expand" for="student">Student</label>
+
+              {{radio-button id="junior" name="seniority" value="junior" checked=seniority}}<label class="button radius expand" for="junior">Junior management</label>
+
+            </div>
+            <div class="small-12 column">
+              {{radio-button id="middle" name="seniority" value="middle" checked=seniority}}<label class="button radius expand" for="middle">Middle management</label>
+
+              {{radio-button id="senior" name="seniority" value="senior" checked=seniority}}<label class="button radius expand" for="senior">Senior management</label>
+
+              {{radio-button id="directorship" name="seniority" value="directorship" checked=seniority}}<label class="button radius expand" for="directorship">Company directorship</label>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="radius button result-blue-background" {{action "addDecider"}} {{bind-attr disabled="isInvalid"}} {{bind-attr class="isValid:animate-pulse"}}>Start test!</button>
+      {{/form-for}}
+    </div>
+  </div>
+</div>

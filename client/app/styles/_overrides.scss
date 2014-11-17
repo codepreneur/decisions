@@ -1,0 +1,39 @@
+.ember-view {
+  // height: 100%;
+}
+
+.super_number {
+	max-width: 70px;
+}
+
+.super_number input {
+	margin-bottom: 0;
+}
+
+.super_number a.increment, .super_number a.decrement {
+	background-color: $primary-color;
+}
+
+.splash-screen {
+  padding-top: 5rem;
+}
+
+.incompatible-overlay {
+  background-color: #009ae4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  color: #FFF;
+  z-index: 10;
+  text-align: center;
+}
+
+.answers .small.button {
+  padding: 0.8rem 1.2rem;
+  margin: 0 .1rem;
+}

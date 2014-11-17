@@ -1,0 +1,187 @@
+<div class="row">
+  <div class="small-24 medium-24 large-16 large-centered column text-center">
+    <h1 class="no-background quiz-heading">THE DECISION BREAKDOWN</h1>
+  </div>
+</div>
+
+<div class="vertical-centered">
+
+	<div class="row">
+		<div class="small-24 medium-24 large-15 large-centered column text-center">
+			<div class="box no-top-margin">
+				<div class="large-gutter row">
+					<div class="small-24 column">
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-24 column">
+						<h4 class="black"><b>Thank you for completing the QBE Decision Breakdown – your test result is currently being calculated.</b></h4>
+						<p class="black">Please take a minute to answer the following questions:</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-24 column">
+						<p class="black"><b>How old are you?</b></p>
+						<div class="row">
+							<div class="small-4 small-centered column">
+								{{input value=age}}
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="large-gutter answers row">
+					<p class="black"><b>Gender?</b></p>
+					<div class="small-12 column">
+						{{radio-button id="male" name="gender" value="male" checked=gender}}<label class="button radius expand" for="male">Male</label>
+					</div>
+
+					<div class="small-12 column">
+						{{radio-button id="female" name="gender" value="female" checked=gender}}<label class="button radius expand" for="female">Female</label>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="small-24 small-centered column">
+						<p class="black"><b>How would you describe yourself?</b></p>
+
+            {{!-- <ul class="checkbox-group">
+              <li>{{input id='player' value="player" type="checkbox"}}<label for="player" class="black">Rugby player</label></li>
+              <li>{{input id='coach' value="coach" type="checkbox"}}<label for="coach" class="black">Rugby coach</label></li>
+              <li>{{input id='fan' value="fan" type="checkbox"}}<label for="fan" class="black">Rugby fan</label></li>
+              <li>{{input id='referee' value="referee" type="checkbox"}}<label for="referee" class="black">Referee</label></li>
+              <li>{{input id='not-involved' value="not-involved" type="checkbox"}}<label for="not-involved" class="black">Not involved in rugby</label></li>
+              <li>{{input id='other' value="other" type="checkbox"}}<label for="other" class="black">Other</label></li>
+            </ul> --}}
+
+
+          </div>
+        </div>
+
+        <div class="large-gutter row answers">
+          <div class="small-8 column">
+            {{radio-button id="rugby" name="rugby" value="involved-rugby" checked=involved}}<label class="smaller-font button radius expand" for="rugby">Involved in Rugby</label>
+          </div>
+
+          <div class="small-8 column">
+            {{radio-button id="no-rugby" name="rugby" value="not-involved-rugby" checked=involved}}<label class="smaller-font button radius expand" for="no-rugby">Not involved in Rugby</label>
+          </div>
+
+
+          <div class="small-8 column">
+            {{radio-button id="no-sports" name="rugby" value="not-involved-sport" checked=involved}}<label class="smaller-font button radius expand" for="no-sports">Not involved in Sport</label>
+          </div>
+        </div>
+
+        {{#if isNotRugbyInvolved}}
+        <div class="large-gutter row">
+          <div class="small-12 column small-centered">
+            {{view Ember.Select
+            content=sports
+            value=selectedSport
+          }}
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if isRugbyInvolved}}
+      <div class="gutter row answers">
+        <div class="small-24 column">
+          {{radio-button id="player" name="rugby" value="player" checked=involvedRugby}}<label class="small button radius" for="player">Player</label>
+          {{!-- {{radio-button id="professional" value="professional" checked=involvedRugby}}<label class="small button radius" for="professional">Professional</label> --}}
+          {{radio-button id="coach" name="rugby" value="coach" checked=involvedRugby}}<label class="small button radius" for="coach">Coach/Manager</label>
+          {{radio-button id="fan" name="rugby" value="fan" checked=involvedRugby}}<label class="small button radius" for="fan">Fan</label>
+          {{radio-button id="referee" name="rugby" value="referee" checked=involvedRugby}}<label class="small button radius" for="referee">Referee</label>
+        </div>
+      </div>
+      {{/if}}
+
+      {{#if isCoach}}
+      <div class="gutter row">
+        <div class="small-12 small-centered column">
+          {{view Ember.Select
+          content=coaches
+          value=selectedCoach
+       	  }}
+	      </div>
+	    </div>
+	    {{/if}}
+
+
+    {{#if isProfessional}}
+    <div class="gutter row">
+      <div class="small-12 small-centered column">
+        {{view Ember.Select
+        content=professionals
+        value=selectedProfessional
+	      }}
+	    </div>
+	  </div>
+	  {{/if}}
+
+
+  {{#if isPlayer}}
+  <div class="gutter row">
+    <div class="small-12 small-centered column">
+      {{view Ember.Select
+      content=players
+      value=selectedPlayer
+	    }}
+	  </div>
+	</div>
+	{{/if}}
+
+	{{#if isPlayerAndSelected}}
+	  <div class="gutter row">
+	    <div class="small-12 small-centered column">
+	      {{view Ember.Select
+	      content=levels
+	      value=selectedLevel
+	    	}}
+	  </div>
+	</div>
+	{{/if}}
+
+
+
+
+<div class="large-gutter row answers">
+ <p class="black extra-large-margin-top">We may invite a selection of those who complete the QBE Decision Breakdown to attend a day of extreme sports and decision making training. Would you be willing to be contacted?</p>  
+ <div class="small-12 column">
+  {{radio-button id="yes" name="qx" value="yes" checked=qx}}<label class="button radius expand" for="yes">Yes please</label>
+</div>
+
+<div class="small-12 column">
+  {{radio-button id="no" name="qx" value="no" checked=qx}}<label class="button radius expand" for="no">No thanks</label>
+</div>
+</div>  
+
+
+<div class="answers">
+ <div class="large-gutter row">
+  <div class="small-24 column">
+   <p class="black extra-large-margin-top">For completing the test we’re giving you 5 draw entries to win signed England merchandise. In the spirit of the QBE Decision Breakdown, you can either accept these prize draw entries below, or take our QBE coin toss gambler – heads you will win 10 entries, tails you will have only 1. Please select your option below.</p>
+ </div>
+</div>
+<div class="gutter row">
+  <div class="small-12 column">
+
+   <button class='radius button' {{action "updateQ5" "entries"}} {{bind-attr disabled="isInvalid"}}>5 draw entries</button>
+
+ </div>
+ <div class="small-12 column">
+
+   <button class='radius button' {{action "updateQ5" "coin"}} {{bind-attr disabled="isInvalid"}}>Toss the coin</button>
+ </div>
+</div>
+</div>
+</div>
+{{!-- end of (dark) box --}}
+
+
+</div>
+</div>
+</div>

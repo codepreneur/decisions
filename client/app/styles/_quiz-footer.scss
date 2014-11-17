@@ -1,0 +1,65 @@
+.footer {
+	background-color: #242530;
+	height: rem-calc(60px);
+	line-height: rem-calc(60px);
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	     -o-transform: none !important;
+	        transform: none !important;
+	span {
+		font-size: rem-calc(11px);
+		opacity: 0.6;
+	}
+	img {
+		height: rem-calc(20px);
+		opacity: 0.6;
+	}
+	.footer-logo {
+		position: absolute;
+		top: rem-calc(20px);
+		left: rem-calc(20px);
+	}
+	.footer-heading {
+		@extend .quiz-heading;
+		padding: 0;
+		font-family: 'Avant-Garde-Pro';
+		&.tagline {
+			margin-left: rem-calc(48px);
+		}
+		&.copyright {
+			position: absolute;
+			top: 0;
+			right: rem-calc(24px);
+		}
+	}
+	.progress {
+		// width: 100%;
+		min-width: rem-calc(400px);
+		margin-top: rem-calc(25px);
+		margin-left: rem-calc(90px);
+		background-color: #1e1f28;
+		border: none;
+		position: absolute;
+		top: 0;
+		left: rem-calc(160px);
+		right: rem-calc(192px);
+		bottom: 0;
+		
+	}
+}
+
+.meter {
+	-webkit-transition: width 1.1s linear;
+	-moz-transition: width 1.1s linear;
+	-o-transition: width 1.1s linear;
+	transition: width 1.1s linear;
+}
+
+.bar-height {
+	height: 0.7rem;
+}

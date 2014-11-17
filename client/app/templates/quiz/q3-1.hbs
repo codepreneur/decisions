@@ -1,0 +1,50 @@
+<div class="extra-large-margin-top vertical-centered">
+  <div class="row">
+    <div class="small-24 medium-24 large-12 large-centered column text-center">
+      <div class="box">
+        <div class="row ">
+          <div class="small-24 column quiz-header">
+            <p class="quiz-heading">PLEASE WATCH THE FOLLOWING CLIP</p>
+          </div>
+        </div>
+        <div class="gutter row">
+          <div class="small-24 column quiz-header margin-bottom">
+          	<video src="videos/video.mp4" controls autoplay></video>
+            {{!-- <video id="video2" controls></video> --}}
+            {{!-- <video id="video1" src="file:///data/data/co.uk.qbe.decider/files/video.mp4" controls></video> --}}
+          </div>
+        </div>
+
+        <div class="answers">
+          <div class="gutter row">
+            <div class="small-24 column">
+            {{!-- {{#if videoEnded}} --}}
+            {{!-- Appears after video finishes --}}
+              <p class="black">
+                You are the England captain. There are 7 minutes left on the clock, and your team is losing by 4 points. 
+              </p>
+{{!--               <p class="black">Imagine you are the England captain. There are four minutes left in this game, and your team is losing by 3 points. You have just been awarded an easy penalty, which if successful would give you 3 points. Alternatively, you can kick for the corner to give your team a chance of scoring a try (5 points, +2 if converted).</p> --}}
+              <p class="black"><b>Do you kick the penalty for the 3 points and push for another penalty in the remaining time, or do you go for the corner and attempt to get the 5 points for the try?</b></p>
+            </div>
+            {{!-- {{/if}} --}}
+          </div>
+          <div class="row">
+            <div class="small-12 column">
+              <span {{action "updateQ32" "penalty"}}>{{#link-to 'quiz.q3-3' class="expand button radius blue-background"}}Kick for the 3 points{{/link-to}}</span>
+            </div>
+            <div class="small-12 column">
+              <span {{action "updateQ32" "corner"}}>{{#link-to 'quiz.q3-3' class="expand button radius blue-background"}}Go for a try{{/link-to}}</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>{{!-- end of (dark) box --}}
+      
+
+    </div>
+
+
+  </div>
+</div>
+</div>

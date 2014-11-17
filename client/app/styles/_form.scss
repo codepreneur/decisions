@@ -1,0 +1,23 @@
+input.border-below {
+  padding: 10px;
+  border: solid 1px #ededed;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  border-radius: 0;
+  box-shadow: none;
+  &:focus {
+    //border-bottom: solid 2px #969696;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    border-bottom-color: darken(#9ecaed, 20%);
+  }
+}
+
+.fieldWithErrors input {
+  @include animate(shake, .6s);
+  outline: none;
+  border-color: #F04124;
+  box-shadow: 0 0 10px #F04124;
+  border-bottom-color: darken(#F04124, 10%);
+}

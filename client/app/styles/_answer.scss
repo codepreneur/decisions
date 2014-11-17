@@ -1,0 +1,40 @@
+// .answer, .answers {
+//   .column, .columns {
+//     min-height: 50px;
+//   }
+// }
+
+  .answers label, .answers input{
+    // display:block;
+    // position:absolute;
+    // top:0;
+    // left:0;
+    // right:0;
+    // bottom:0;
+  }
+
+.answers input[type="radio"] {
+  opacity:0;
+  z-index: 2;
+  display: none;
+}
+
+.answers input[type="radio"]:checked + label,
+.checked + label {
+  background: #242530;
+}
+
+.answers label {
+ //cursor:pointer;
+ //z-index: 1;
+ margin: 1.5rem 0;
+}
+
+// .answers label:hover {
+//  background:#DDD;
+// }
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  margin-left: 0;
+  margin-right: 0;
+}

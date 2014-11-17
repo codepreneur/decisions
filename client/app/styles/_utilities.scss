@@ -1,0 +1,189 @@
+.no-margin {
+  margin: 0;
+}
+
+//.vertical-centered {
+    // Internet Explorer 10 */
+    //display:-ms-flexbox;
+    //-ms-flex-pack:center;
+    //-ms-flex-align:center;
+    //Firefox */
+    //display:-moz-box;
+    //-moz-box-pack:center;
+    //-moz-box-align:center;
+    // Safari, Opera, and Chrome */
+    //display:-webkit-box;
+    //-webkit-box-pack:center;
+    //-webkit-box-align:center;
+    // W3C */
+    //display:box;
+    //box-pack:center;
+    //box-align:center;
+//}
+
+.vertical-centered {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row.gutter, .column.gutter, .columns.gutter{
+  margin-bottom: 1rem;
+} 
+
+.row.large-gutter, .column.large-gutter, .columns.large-gutter{
+  margin-bottom: 2rem;
+}
+
+.row.extra-large-gutter, .column.extra-large-gutter, .columns.extra-large-gutter{
+  margin-bottom: 5rem;
+}
+
+
+.extra-large-margin-top {
+  margin-top: 5rem;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.centered {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.horizontal-centered {
+  position: relative;
+  top: -10px;
+}
+
+.liquid-bind-time {
+  font-size: 48px;
+}
+
+.no-background {
+  background: none !important;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.purple {
+  color: #aa64a5;
+}
+
+.purple-background {
+  background-color: #aa64a5;
+}
+
+.yellow {
+  color: #f5a500;
+}
+
+.yellow-background {
+  background-color: #f5a500;
+}
+
+.blue {
+  color: #14a09b;
+}
+
+.blue-background {
+  background-color: #14a09b;
+}
+
+.result-blue {
+  color: #009ae4;
+}
+
+.result-blue-background {
+  background-color: #009ae4;
+}
+
+.green {
+  color: #2daf64;
+}
+
+.green-background {
+  background-color: #2daf64;
+}
+
+.red {
+  color: #f34a4a;
+}
+
+.red-background {
+  background-color: #f34a4a;
+}
+
+.secondary {
+  opacity: 0.3;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.margin-bottom {
+  margin-bottom: -.4rem;
+}
+
+.extra-large-margin-top {
+  margin: 0;
+}
+
+.transparent-background {
+  background: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.clearDropdown { 
+	left: -99999px !important;
+}
+
+.dropdown-min-height {
+	min-height: rem-calc(93px);
+}
+
+.smaller-font {
+  font-size: 0.9rem;
+}
+
+.small-font {
+	font-size: rem-calc(12px);
+}
+
+.round {
+	border-radius: 1000px;
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
+.margin-left {
+	margin-left: 40%;
+}
+
+.position-relative {
+	position: relative;
+}
+
+input,select,textarea {
+  -webkit-user-select: text;
+}
+

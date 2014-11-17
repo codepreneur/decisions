@@ -1,0 +1,88 @@
+.clock-container {
+  position: relative;
+}
+
+.clock-seconds{
+  font-size: 3em;
+  color: #FCB03C;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+#line-container {
+  position: relative;
+
+
+  svg {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    width: 130%;
+
+    height: 2px;
+  }
+}
+
+svg {
+  max-height: 100px;
+  path {
+    stroke-width: 1.5;
+  }
+}
+
+
+
+.timer-question {
+  > .ember-view {
+    position: absolute;
+    top: 0;
+    .clock-container {
+      position: absolute;
+    }
+  }
+}
+
+#countdown-q2-1-l,
+#countdown-q2-2-l {
+font-size: 4rem;
+position: absolute;
+color: #DD9500;
+top: 200px;
+left: -230px;
+display: none !important;
+overflow: visible;
+height: 160px;
+width: 210px;
+  svg {
+    display: none !important;
+  }
+}
+#countdown-q2-1-r,
+#countdown-q2-2-r {
+  position: absolute;
+  font-size: 4rem;
+  color: #DD9500;
+  // opacity: 0.7;
+  top: 200px;
+  right: -600px;
+display: none !important;
+overflow: visible;
+height: 160px;
+width: 210px;
+  svg {
+    display: none !important;
+  }
+}
+
+
+
+

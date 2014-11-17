@@ -1,0 +1,61 @@
+<div class="extra-large-margin-top vertical-centered">
+  <div class="row">
+    <div class="small-24 medium-24 large-12 large-centered column text-center timer-question">
+      {{time-countdown elId="countdown-q2-1-l" class="show-for-large-up" action="nextQuestion"}}
+      <div class="box">
+        <div class="large-gutter row">
+          <div class="small-24 column quiz-header">
+            <p class="quiz-heading">PRESSURE - QUESTION 1</p>
+
+          </div>
+        </div>
+        {{time-countdown elId="countdown-q2-1" action="nextQuestion"}}
+        
+        
+        <div class="gutter row">
+          <div class="small-24 column black">
+            50 points are scored in a game between England and Samoa. England scored 40 points more than Samoa.
+          </div>
+        </div>
+        <div class="answers">
+          <div class="gutter row">
+            <div class="small-24 column">
+              <p class="black">How many points did Samoa score?</p>
+            </div>
+          </div>
+            
+          <div class="gutter row">
+            <div class="small-12 column">
+              <span {{action "updateQ21" "5"}}>{{#link-to 'quiz.q2-2' class="button radius yellow-background"}}5 points{{/link-to}}</span>
+            </div>
+
+            <div class="small-12 column">
+              <span {{action "updateQ21" "10"}}>{{#link-to 'quiz.q2-2' class="button radius yellow-background"}}10 points{{/link-to}}</span>
+            </div>
+          </div>  
+
+            <div class="row">
+              <div class="small-12 column">
+                <span {{action "updateQ21" "15"}}>{{#link-to 'quiz.q2-2' class="button radius yellow-background"}}15 points{{/link-to}}</span>
+              </div>
+
+              <div class="small-12 column">
+                <span {{action "updateQ21" "20"}}>{{#link-to 'quiz.q2-2' class="button radius yellow-background"}}20 points{{/link-to}}</span>
+              </div>
+
+            </div>
+
+            
+        
+            
+            
+          
+
+        </div> {{!-- end of answers --}}
+      </div>{{!-- end of (dark) box --}}
+      {{time-countdown elId="countdown-q2-1-r" class="show-for-large-up" action="nextQuestion"}}
+
+
+    </div>
+  </div>
+</div>

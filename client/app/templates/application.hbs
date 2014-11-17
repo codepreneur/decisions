@@ -1,0 +1,19 @@
+{{!liquid-outlet containerless=true}}
+{{liquid-outlet}}
+
+{{!-- <div class="footer expand extra-large-margin-top">
+  <ul class="inline-list">
+    <li><a><img class="footer-logo" src="img/qbe-logo-small.png" alt=""></a></li>
+    <li><span class="quiz-heading footer-heading">THE DECISION BREAKDOWN</span></li>
+    <li><a>{{progress-bar class=class percent=percent}}</a></li>
+    <li><span class="quiz-heading copyright" {{bind-attr style=style}}>&copy; QBE Limited 2014</span></li>
+  </ul>
+</div>
+ --}}
+
+<div class="footer expand extra-large-margin-top">
+  <img class="footer-logo" src="img/qbe-logo-small.png" alt="">
+  <span class="footer-heading tagline">THE DECISION BREAKDOWN</span>
+  {{progress-bar class=class percent=percent}}
+  <span class="footer-heading copyright" {{bind-attr style=style}}>&copy; QBE Limited 2014</span>
+</div>

@@ -1,0 +1,19 @@
+button, .button {
+	background-color: #bbbbbb;
+  margin: 0;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #242530;
+  -webkit-box-shadow: 0px 0px 1px 1px #fff;
+          box-shadow: 0px 0px 1px 1px #fff;
+}
+
+.button-start {
+      // @include animate(fade-in-up, 0.5s, 0.5s);
+      @include animate(pulse, 1s);
+    -webkit-animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+         -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}

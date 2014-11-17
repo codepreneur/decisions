@@ -1,0 +1,30 @@
+//  ==============
+//  = Animations =
+//  ==============
+// https://github.com/jdsimcoe/animated.sass
+
+@import "../../bower_components/animated.sass/_animated";
+@include animation(fade-in);
+@include animation(fade-in-up);
+@include animation(bounce-in-down);
+@include animation(bounce-in-up);
+@include animation(bounce-in);
+@include animation(bounce);
+@include animation(pulse);
+@include animation(wobble);
+@include animation(shake);
+
+.animate-pulse {
+    @include animate(pulse, 1s);
+    -webkit-animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+         -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+.animate-bounce {
+  @include animate(bounce, 1s);
+}
+
+.animate-fadein {
+  @include animate(fade-in, 1s, 0.5s);
+}

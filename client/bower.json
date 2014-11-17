@@ -1,0 +1,30 @@
+{
+  "name": "qbe-prototype",
+  "dependencies": {
+    "handlebars": "~1.3.0",
+    "jquery": "^1.11.1",
+    "ember": "1.7.0",
+    "ember-data": "1.0.0-beta.10",
+    "ember-resolver": "~0.1.7",
+    "loader.js": "stefanpenner/loader.js#1.0.1",
+    "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.3",
+    "ember-cli-test-loader": "rwjblue/ember-cli-test-loader#0.0.4",
+    "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
+    "ember-qunit": "0.1.8",
+    "ember-qunit-notifications": "0.0.4",
+    "qunit": "~1.15.0",
+    "foundation": "~5.4.5",
+    "ember-easyform": "http://builds.dockyard.com.s3.amazonaws.com/ember-easyForm/canary/daily/20140522/ember-easyForm.prod.js",
+    "ember-validation": "http://builds.dockyard.com.s3.amazonaws.com/ember-validations/tags/v1.0.0/ember-validations.prod.js",
+    "progress.js": "~0.1.0",
+    "firebase": "^1.0.0",
+    "emberfire": "~1.2.6",
+    "progressbar.js": "~0.4.1",
+    "animated.sass": "jdsimcoe/animated.sass#~0.3.1",
+    "ember-animate": "~0.3.6",
+    "RRSSB": "git://github.com/kni-labs/rrssb.git#~1.6.0"
+  },
+  "resolutions": {
+    "jquery": ">= 2.1.0"
+  }
+}
